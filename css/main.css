@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 0 30px;
+      grid-template-areas: ". content content content .";
+}
+/*# sourceMappingURL=main.css.map */
