@@ -1,15 +1,17 @@
-$primary-color: #444;
+$background-color: rgb(226, 225, 225);
+$primary-color: rgb(31, 30, 30);
+$hover-color: rgb(233, 20, 20);
+$link-color: rgb(58, 37, 248);
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: $primary-color;
-    height: 100%;
+    background-color: $background-color;
 }
 
-.grid {
+.container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
@@ -19,10 +21,52 @@ body {
 
 .content {
     grid-area: content;
-    max-width: 1200px;
     width: 100%;
-}
 
-.main {
-    justify-content: center;
+    .nav {
+        background-color: rgb(226, 219, 219);
+        display: flex;
+        justify-content: space-evenly;
+        position: sticky;
+        top: 0;
+        height: 2em;
+        font-size: larger;
+        padding-top: 0.3em;
+        a {
+            vertical-align: middle;
+            text-decoration: none;
+            color: $link-color;
+            &:hover {
+                box-sizing: border-box;
+                color: $hover-color;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .main {
+        color: $primary-color;
+        text-align: center;
+    }
+
+    .footer {
+        background-color: rgb(226, 219, 219);
+        display: flex;
+        justify-content: space-evenly;
+        position: sticky;
+        bottom: 0;
+        height: 2em;
+        padding-top: 0.3em;
+        font-size: larger;
+        a {
+            vertical-align: middle;
+            text-decoration: none;
+            color: $link-color;
+            &:hover {
+                box-sizing: border-box;
+                color: $hover-color;
+                text-decoration: underline;
+            }
+        }
+    }
 }
