@@ -1,0 +1,37 @@
+-- Scrum --
+Scrum är ett arbetssätt som delar upp projekt i ettapper kallade sprintar. 
+Beställaren - produktägaren - förklarar projektet och delger en backlog 
+fylld med uppgifter att utföra i en rangordning på prioritering. 
+
+Teamet som ska utföra projektet består vanligtvis av inte mer än 7-8 personer 
+där en utses till scrumMaster. Scrum Mastern är ledaren för projektet och 
+hjälper både Produktägaren och utvecklingsteamet.
+
+Teamets sprint är oftast mellan 1-4 veckor (bestäms i förväg) lång där man tar en 
+del av backlogen och bestämmer att under denna sprint ska detta hinnas med. 
+
+Varje dag i en sprint startar med ett kort dagligt uppföljningsmöte. 
+Finns några tillfälliga problem, lösningar på detta? Vart ligger vi i tiden? 
+
+I slutet av varje sprint redovisas vad som gjorts för produktägaren samt görs en 
+"sprint retrospective" där teamet inspekterar sitt jobb för att finna till exempel 
+förbättringar inför nästa sprint.
+
+-- Grafisk Profil --
+En grafisk profil är en mall på hur ett projekt ska se ut. 
+Vilken logo som ska användas, färger, typsnitt, mönster etc.
+
+Utan en grafisk profil skulle programmeraren få "fria händer", tänk om flera 
+programmerare jobbar på samma projekt men olika sidor. Ingenting skulle följa en mall.
+Kaos! :)
+
+-- Tillgänglighet --
+Viktiga hemsidor ska kunna nås av exakt så många som det är möjligt i samhället. 
+Människor med funktionshinder ska kunna använda webben. 
+
+Detta gäller inte alla sidor, men alla samhällsviktiga webbsidor.
+(Myndigheter, landsting, kommuner och andra aktörer som klassas som offentligrättsliga organ, 
+dvs. aktörer som anses vara en upphandlande myndighet)
+
+Webben blir som allt teknologiskt mer om mer viktigt i samhället och nya krav har 
+kommit från EU ang tillgänglighet. 

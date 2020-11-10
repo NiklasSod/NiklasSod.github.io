@@ -1,3 +1,13 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #444;
+  height: 100%;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
@@ -6,5 +16,20 @@
   gap: 20px;
   padding: 0 30px;
       grid-template-areas: ". content content content .";
+}
+
+.content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: content;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.main {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+{
+  "name": "niklassod.github.io",
+  "version": "1.0.0",
+  "description": "Responsive portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiklasSod/NiklasSod.github.io.git"
+  },
+  "author": "Nik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NiklasSod/NiklasSod.github.io/issues"
+  },
+  "homepage": "https://github.com/NiklasSod/NiklasSod.github.io#readme"
+}
