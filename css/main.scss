@@ -21,7 +21,7 @@ body {
     width: 100%;
 
     .nav {
-        background-color: rgb(226, 219, 219);
+        background-color: $nav-foot-back-col;
         display: flex;
         justify-content: space-evenly;
         position: sticky;
@@ -35,7 +35,7 @@ body {
             color: $link-color;
             &:hover {
                 box-sizing: border-box;
-                color: $hover-color;
+                color: $hover-link-color;
                 text-decoration: underline;
             }
         }
@@ -47,12 +47,12 @@ body {
     }
 
     .footer {
-        background-color: rgb(226, 219, 219);
+        background-color: $nav-foot-back-col;
         display: flex;
         justify-content: space-evenly;
         position: sticky;
         bottom: 0;
-        height: 2em;
+        height: 2.6em;
         padding-top: 0.3em;
         font-size: larger;
         a {
@@ -61,7 +61,7 @@ body {
             color: $link-color;
             &:hover {
                 box-sizing: border-box;
-                color: $hover-color;
+                color: $hover-link-color;
                 text-decoration: underline;
             }
         }
