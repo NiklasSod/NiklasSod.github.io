@@ -6,6 +6,21 @@ $link-color: rgb(23, 2, 247);
 $max-width-pics: 340px;
 $max-width-mobil-pics: 200px;
 
+
+@mixin linkstyle {
+    a {
+        text-decoration-line: none;
+        color: $link-color;
+        &:visited {
+            color: $link-color;
+        }
+        &:hover {
+            color: $hover-link-color;
+            text-decoration-line: underline;
+        }            
+    }
+}
+
 @mixin navAndFootStyle {
     background-color: $nav-foot-back-col;
     display: flex;
@@ -20,6 +35,7 @@ $max-width-mobil-pics: 200px;
         font-size: larger;
         text-decoration-line: none;
         color: $link-color;
+        // the site is not big so moving around wont be a problem, no need for change of color
         &:visited {
             color: $link-color;
         }

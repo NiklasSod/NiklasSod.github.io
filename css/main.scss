@@ -3,6 +3,10 @@
 // and footer has alot in common
 @import "settings";
 
+html {
+    scroll-behavior: smooth;
+  }
+
 // mostly made to center everything a bit in two columns 
 // but i wanted navbar and footer on width 100%
 .container {
@@ -66,6 +70,7 @@
     }
     .contactInfo {
         grid-area: contactInfo;
+        @include linkstyle;
         h1 {
             text-align: center;
             font-style: italic;
@@ -91,6 +96,7 @@
     }
     .nackademinInfo {
         grid-area: nackademinInfo;
+        @include linkstyle;
     }
     .footer {
         grid-area: footer;
@@ -166,8 +172,8 @@
     }
 }
 
-// now everything needs to get smaller, removing text in navbar
-// changing max width on pictures
+// now everything needs to get smaller, removing text in navbar 
+// only keeping icons and changing max width on pictures
 @media screen and (max-width: 680px) {
     * {
         color: gold;

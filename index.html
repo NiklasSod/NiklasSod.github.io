@@ -10,36 +10,36 @@
   </head>
   <body>
 
-  <div class="container">
-
+  <div id="section1" class="container">
+    <!--four sections in the navbar to go to correct section id in code-->
     <nav class="nav">
-      <a href=""><img
+      <a href="#section1"><img
         src="./icons/home.PNG"
         alt="link to about me"
         width="40"
         height="40"
       />Home</a>
-      <a href=""><img
+      <a href="#section2"><img
         src="./icons/portfolio.PNG"
         alt="link to my portfolio"
         width="40"
         height="40"
       />Portfolio</a>
-      <a href=""><img
-        src="./icons/school.PNG"
-        alt="link to information about my school"
-        width="40"
-        height="40"
-      />Nackademin</a>
-      <a href=""><img
+      <a href="#section3"><img
         src="./icons/contacts.PNG"
         alt="link to my contact information"
         width="40"
         height="40"
       />Contacts</a>
+      <a href="#section4"><img
+        src="./icons/school.PNG"
+        alt="link to information about my school"
+        width="40"
+        height="40"
+      />Nackademin</a>
     </nav>
 
-    <img class="profilePic" src="./pics/meprofile.PNG" alt="A picture of my face">
+    <img class="profilePic" src="./pics/meprofile.PNG" alt="A picture of my happy face">
     <div class="aboutMe">
       <h1>Hello! <br>My name is Niklas <span class="lastName">Söderberg</span></h1>
       <p>I am studying to become a full stack web developer at Nackademin in Stockholm.</p>
@@ -47,7 +47,7 @@
       <p>My interests have started to change and are starting to lean more and more towards programming.</p>
     </div>
     
-    <div class="acme">
+    <div id="section2" class="acme">
       <a
         style="font-style: italic"
         href="https://github.com/NiklasSod/ACME-Events"
@@ -60,28 +60,28 @@
       >
       <h3>A project to create and show events</h5>
     </div>
-    <!--uppdatera quiz när färdig-->
+    <!--uppdatera quiz när färdig...-->
     <div class="quiz">
       <h1>Quiz</h1>
       <h3>An online quiz made by fetching API</h3>
       <p>In progness...</p>
     </div>
-    <!--ignorera yatzy?-->
+    <!--Vår yatzy såg för oseriös ut...-->
     <div class="yatzy"></div>
 
 
-    <div class="contactInfo">
+    <div id="section3" class="contactInfo">
       <h1>Contact information</h1>
       <p>Niklas Söderberg</p>
       <p>0704-15 76 15</p>
-      <p>niklas.soderberg@outlook.com</p>
-      <p>Sågverksgatan 98, Enskede</p>
+      <p><a href="mailto:niklas.soderberg@outlook.com">niklas.soderberg@outlook.com</a></p>
+      <p><a href="https://www.google.se/maps/place/S%C3%A5gverksgatan+98,+122+41+Enskede/">Sågverksgatan 98, Enskede</a></p>
     </div>
     <img class="tipsfedora" src="./pics/meNods.PNG" alt="A silly picture of myself">
 
     <img class="schoolpic" src="./pics/nackademin.PNG" alt="A picture of the main entry to Nackademin, school in Stockholm">
-    <div class="nackademinInfo">
-      <h1>My education</h1>
+    <div id="section4" class="nackademinInfo">
+      <h1>My <a href="https://nackademin.se/">education</a></h1>
       <p>Web developer full stack open source gives you a broad programming competence in both backend and frontend. 
         You will be able to develop modern applications using HTML, CSS and various JavaScript libraries. 
         In addition to this, you will also learn to collaborate in agile projects, from coding to implementation. 
