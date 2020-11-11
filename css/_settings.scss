@@ -4,6 +4,7 @@ $primary-color: rgb(49, 49, 49);
 $hover-link-color: rgb(235, 13, 13);
 $link-color: rgb(23, 2, 247);
 $max-width-pics: 340px;
+$max-width-mobil-pics: 200px;
 
 @mixin navAndFootStyle {
     background-color: $nav-foot-back-col;

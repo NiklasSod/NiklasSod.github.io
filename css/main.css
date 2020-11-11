@@ -137,6 +137,7 @@
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: tipsfedora;
+  margin-left: 1em;
   max-width: 340px;
 }
 
@@ -146,6 +147,10 @@
   grid-area: schoolpic;
   -ms-grid-column-align: end;
       justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 1em;
   max-width: 340px;
 }
 
@@ -200,28 +205,19 @@
           text-decoration-line: underline;
 }
 
-@media screen and (max-width: 1040px) {
+@media only screen and (max-width: 1040px) {
   .container {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    background-color: #c8e8f0;
     display: -ms-grid;
     display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-grid-columns: 10em 1fr 10em;
         grid-template-columns: 10em 1fr 10em;
-    grid-gap: 1em;
-        grid-template-areas: "nav nav nav" ". profilePic ." ". aboutMe ." ". acme ." ". quiz ." ". contactInfo ." ". tipsfedora ." ". schoolpic ." ". nackademinInfo ." "footer footer footer";
+        grid-template-areas: "nav nav nav" ". aboutMe ." ". profilePic ." ". acme ." ". quiz ." ". contactInfo ." ". tipsfedora ." ". schoolpic ." ". nackademinInfo ." "footer footer footer";
   }
-  .nav {
+  .container .nav {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: nav;
-    padding: 1.2em;
-    top: 0;
     background-color: rgba(169, 234, 236, 0.842);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -232,10 +228,10 @@
     position: -webkit-sticky;
     position: sticky;
   }
-  .nav img {
+  .container .nav img {
     padding-right: 0.4em;
   }
-  .nav a {
+  .container .nav a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -247,75 +243,81 @@
             text-decoration-line: none;
     color: #1702f7;
   }
-  .nav a:visited {
+  .container .nav a:visited {
     color: #1702f7;
   }
-  .nav a:hover {
+  .container .nav a:hover {
     color: #eb0d0d;
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
   }
-  .profilePic {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: profilePic;
-    max-width: 360px;
-    margin: 1em;
-  }
-  .aboutMe {
+  .container .profilePic {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
+    grid-area: profilePic;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .container .aboutMe {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: aboutMe;
-    width: 100%;
-    color: black;
+    margin-left: 1.4em;
   }
-  .aboutMe h1 {
-    font-size: 2.6em;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .aboutMe p {
-    font-family: Courier, Monaco, monospace;
-  }
-  .aboutMe span {
-    color: #5c0202;
-  }
-  .acme {
+  .container .acme {
+    -ms-grid-column-align: center;
+        justify-self: center;
     -ms-grid-row: 4;
     -ms-grid-column: 2;
     grid-area: acme;
   }
-  .yatzy {
-    grid-area: yatzy;
+  .container .quiz {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: quiz;
+    padding: 0;
   }
-  .contactInfo {
+  .container .quiz h1 {
+    padding: 0;
+  }
+  .container .contactInfo {
     -ms-grid-row: 6;
     -ms-grid-column: 2;
     grid-area: contactInfo;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
-  .tipsfedora {
+  .container .contactInfo p {
+    text-align: start;
+  }
+  .container .tipsfedora {
     -ms-grid-row: 7;
     -ms-grid-column: 2;
     grid-area: tipsfedora;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0;
   }
-  .schoolpic {
+  .container .schoolpic {
     -ms-grid-row: 8;
     -ms-grid-column: 2;
     grid-area: schoolpic;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0;
   }
-  .nackademinInfo {
+  .container .nackademinInfo {
     -ms-grid-row: 9;
     -ms-grid-column: 2;
     grid-area: nackademinInfo;
-    -ms-flex-line-pack: center;
-        align-content: center;
   }
-  .footer {
+  .container .footer {
     -ms-grid-row: 10;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: footer;
-    padding: 0.8em;
-    bottom: 0;
     background-color: rgba(169, 234, 236, 0.842);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -326,10 +328,10 @@
     position: -webkit-sticky;
     position: sticky;
   }
-  .footer img {
+  .container .footer img {
     padding-right: 0.4em;
   }
-  .footer a {
+  .container .footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -341,17 +343,17 @@
             text-decoration-line: none;
     color: #1702f7;
   }
-  .footer a:visited {
+  .container .footer a:visited {
     color: #1702f7;
   }
-  .footer a:hover {
+  .container .footer a:hover {
     color: #eb0d0d;
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 680px) {
   * {
     color: gold;
   }

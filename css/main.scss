@@ -1,6 +1,10 @@
+// importing some set colours to make the website keep to 
+// the style i want also importing a mixin because navbar 
+// and footer has alot in common
 @import "settings";
 
-// mostly made to center everything but navbar and footer
+// mostly made to center everything a bit in two columns 
+// but i wanted navbar and footer on width 100%
 .container {
     box-sizing: border-box;
     background-color: $background-color;
@@ -15,7 +19,7 @@
     '. contactInfo tipsfedora .'
     '. schoolpic nackademinInfo .'
     'footer footer footer footer';
-    // navbar
+    // the struckture follows the html skelleton through nested selectors
     .nav {
         grid-area: nav;
         padding: 1.2em;
@@ -23,7 +27,6 @@
         @include navAndFootStyle;
     }
     .profilePic {
-        
         grid-area: profilePic;
         justify-self: end;
         max-width: $max-width-pics;
@@ -56,7 +59,8 @@
         h1 {
         font-style: italic;
         color: $link-color;
-        // change to picture, make "acme_logo"-size, then remove padding
+        // note to self change to picture when quiz is done, 
+        // make size "acme_logo" big, then remove padding
         padding-bottom: 4em;
         }
     }
@@ -75,11 +79,14 @@
     }
     .tipsfedora {
         grid-area: tipsfedora;
+        margin-left: 1em;
         max-width: $max-width-pics;
     }
     .schoolpic {
         grid-area: schoolpic;
         justify-self: end;
+        align-self: center;
+        margin-right: 1em;
         max-width: $max-width-pics;
     }
     .nackademinInfo {
@@ -92,22 +99,15 @@
         @include navAndFootStyle;
     }
 }
-
-
-
-
-@media screen and (max-width: 1040px) {
+// i make most things centered (all pics) and in only one column
+@media only screen and (max-width: 1040px) {
     .container {
-      box-sizing: border-box;
-      background-color: $background-color;
       display: grid;
-      justify-content: center;
       grid-template-columns: 10em 1fr 10em;
-      grid-gap: 1em;
       grid-template-areas:
         "nav nav nav"
-        ". profilePic ."
         ". aboutMe ."
+        ". profilePic ."
         ". acme ."
         ". quiz ."
         ". contactInfo ."
@@ -115,64 +115,62 @@
         ". schoolpic ."
         ". nackademinInfo ."
         "footer footer footer";
-    }
-    .nav {
-      grid-area: nav;
-      padding: 1.2em;
-      top: 0;
-      @include navAndFootStyle;
-    }
-    .profilePic {
-      grid-area: profilePic;
-      max-width: 360px;
-      margin: 1em;
-    }
-    .aboutMe {
-      grid-area: aboutMe;
-      width: 100%;
-      color: black;
-      h1 {
-        font-size: 2.6em;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      p {
-        font-family: Courier, Monaco, monospace;
-      }
-      span {
-        color: rgb(92, 2, 2);
-      }
-    }
-    .acme {
-      grid-area: acme;
-    }
-    .yatzy {
-      grid-area: yatzy;
-    }
-    .contactInfo {
-      grid-area: contactInfo;
-    }
-    .tipsfedora {
-      grid-area: tipsfedora;
-    }
-    .schoolpic {
-      grid-area: schoolpic;
-    }
-    .nackademinInfo {
-      grid-area: nackademinInfo;
-      align-content: center;
-    }
-    .footer {
-      grid-area: footer;
-      padding: 0.8em;
-      bottom: 0;
-      @include navAndFootStyle;
+        .nav {
+        grid-area: nav;
+        @include navAndFootStyle;
+        }
+        .profilePic {
+        grid-area: profilePic;
+        justify-self: center;
+        }
+        .aboutMe {
+        grid-area: aboutMe;
+        margin-left: 1.4em;
+        }
+        .acme {
+        justify-self: center;
+        grid-area: acme;
+        }
+        .quiz {
+        justify-self: center;
+        grid-area: quiz;
+        padding: 0;
+        h1 {
+            padding: 0;
+            }
+        }
+        .contactInfo {
+        grid-area: contactInfo;
+        justify-self: center;
+        p {
+            text-align: start;
+        }
+        }
+        .tipsfedora {
+        grid-area: tipsfedora;
+        justify-self: center;
+        margin: 0;
+        }
+        .schoolpic {
+        grid-area: schoolpic;
+        justify-self: center;
+        margin: 0;
+        }
+        .nackademinInfo {
+        grid-area: nackademinInfo;
+        }
+        .footer {
+        grid-area: footer;
+        @include navAndFootStyle;
+        }
     }
 }
 
-
-
-@media screen and (max-width: 720px) {
+// now everything needs to get smaller, removing text in navbar
+// changing max width on pictures
+@media screen and (max-width: 680px) {
     * {
         color: gold;
+        // $max-width-mobil-pics: 200px;
     }
 }
