@@ -9,8 +9,12 @@ $link-color: rgb(23, 2, 247);
     display: flex;
     justify-content: space-evenly;
     position: sticky;
-    z-index: 1;
+    img {
+        padding-right: 0.4em;
+    }
     a {
+        display: flex;
+        align-items: center;
         font-size: larger;
         text-decoration-line: none;
         color: $link-color;

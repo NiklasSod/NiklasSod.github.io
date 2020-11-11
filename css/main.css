@@ -7,9 +7,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: 20em (1fr)[2] 20em;
-      grid-template-columns: 20em repeat(2, 1fr) 20em;
-  grid-gap: 1em;
+  -ms-grid-columns: 14em 1fr 1fr 14em;
+      grid-template-columns: 14em 1fr 1fr 14em;
+  grid-gap: 3em 1em;
       grid-template-areas: 'nav nav nav nav' '. profilePic aboutMe .' '. acme yatzy .' '. contactInfo tipsfedora .' '. schoolpic nackademinInfo .' 'footer footer footer footer';
 }
 
@@ -29,10 +29,19 @@
           justify-content: space-evenly;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 1;
+}
+
+.container .nav img {
+  padding-right: 0.4em;
 }
 
 .container .nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: larger;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
@@ -53,15 +62,14 @@
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: profilePic;
-  max-width: 360px;
-  margin: 1em;
+  max-width: 340px;
+  margin: 1em 0;
 }
 
 .container .aboutMe {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: aboutMe;
-  width: 100%;
   color: black;
 }
 
@@ -100,12 +108,14 @@
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: tipsfedora;
+  max-width: 340px;
 }
 
 .container .schoolpic {
   -ms-grid-row: 5;
   -ms-grid-column: 2;
   grid-area: schoolpic;
+  max-width: 340px;
 }
 
 .container .nackademinInfo {
@@ -130,10 +140,19 @@
           justify-content: space-evenly;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 1;
+}
+
+.container .footer img {
+  padding-right: 0.4em;
 }
 
 .container .footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: larger;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
@@ -148,5 +167,162 @@
   color: #eb0d0d;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+@media screen and (max-width: 1040px) {
+  .container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #c8e8f0;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 10em 1fr 10em;
+        grid-template-columns: 10em 1fr 10em;
+    grid-gap: 1em;
+        grid-template-areas: "nav nav nav" ". profilePic ." ". aboutMe ." ". acme ." ". yatzy ." ". contactInfo ." ". tipsfedora ." ". schoolpic ." ". nackademinInfo ." "footer footer footer";
+  }
+  .nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: nav;
+    padding: 1.2em;
+    top: 0;
+    background-color: rgba(169, 234, 236, 0.842);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .nav img {
+    padding-right: 0.4em;
+  }
+  .nav a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: larger;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    color: #1702f7;
+  }
+  .nav a:visited {
+    color: #1702f7;
+  }
+  .nav a:hover {
+    color: #eb0d0d;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+  .profilePic {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: profilePic;
+    max-width: 360px;
+    margin: 1em;
+  }
+  .aboutMe {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: aboutMe;
+    width: 100%;
+    color: black;
+  }
+  .aboutMe h1 {
+    font-size: 2.6em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .aboutMe p {
+    font-family: Courier, Monaco, monospace;
+  }
+  .aboutMe span {
+    color: #5c0202;
+  }
+  .acme {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: acme;
+  }
+  .yatzy {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: yatzy;
+  }
+  .contactInfo {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    grid-area: contactInfo;
+  }
+  .tipsfedora {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+    grid-area: tipsfedora;
+  }
+  .schoolpic {
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+    grid-area: schoolpic;
+  }
+  .nackademinInfo {
+    -ms-grid-row: 9;
+    -ms-grid-column: 2;
+    grid-area: nackademinInfo;
+  }
+  .footer {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footer;
+    padding: 0.8em;
+    bottom: 0;
+    background-color: rgba(169, 234, 236, 0.842);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .footer img {
+    padding-right: 0.4em;
+  }
+  .footer a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: larger;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    color: #1702f7;
+  }
+  .footer a:visited {
+    color: #1702f7;
+  }
+  .footer a:hover {
+    color: #eb0d0d;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  * {
+    color: gold;
+  }
 }
 /*# sourceMappingURL=main.css.map */
