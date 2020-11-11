@@ -1,6 +1,46 @@
+.main .home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "img aboutMe";
+  color: #0e0e0e;
+  margin: 1em 2em;
+}
+
+.main .home img {
+  max-width: 300px;
+  margin: 1em;
+}
+
+.main .home #aboutMe {
+  padding: 1em;
+}
+
+.main .home #aboutMe h1 span {
+  color: #360505;
+}
+
+.main .home #aboutMe p {
+  font-size: large;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  body .home {
+        grid-template-areas: "img" "aboutMe";
+    color: black;
+  }
+}
+
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 body {
@@ -12,7 +52,6 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
   padding: 0 30px;
       grid-template-areas: ". content content content .";
 }
@@ -35,9 +74,9 @@ body {
           justify-content: space-evenly;
   position: -webkit-sticky;
   position: sticky;
+  font-size: larger;
   top: 0;
   height: 2em;
-  font-size: larger;
   padding-top: 0.3em;
 }
 
@@ -54,11 +93,6 @@ body {
   text-decoration: underline;
 }
 
-.content .main {
-  color: #1f1e1e;
-  text-align: center;
-}
-
 .content .footer {
   background-color: rgba(169, 234, 236, 0.842);
   display: -webkit-box;
@@ -69,10 +103,10 @@ body {
           justify-content: space-evenly;
   position: -webkit-sticky;
   position: sticky;
+  font-size: larger;
   bottom: 0;
   height: 2.6em;
   padding-top: 0.3em;
-  font-size: larger;
 }
 
 .content .footer a {

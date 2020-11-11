@@ -1,7 +1,9 @@
 @import "settings";
+@import "maincontent";
+@import "mediaQuery";
 
 * {
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 body {
@@ -11,7 +13,6 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
     padding: 0 30px;
     grid-template-areas: ". content content content .";
 }
@@ -21,13 +22,9 @@ body {
     width: 100%;
 
     .nav {
-        background-color: $nav-foot-back-col;
-        display: flex;
-        justify-content: space-evenly;
-        position: sticky;
+        @include navFootStyle;
         top: 0;
         height: 2em;
-        font-size: larger;
         padding-top: 0.3em;
         a {
             vertical-align: middle;
@@ -41,20 +38,11 @@ body {
         }
     }
 
-    .main {
-        color: $primary-color;
-        text-align: center;
-    }
-
     .footer {
-        background-color: $nav-foot-back-col;
-        display: flex;
-        justify-content: space-evenly;
-        position: sticky;
+        @include navFootStyle;
         bottom: 0;
         height: 2.6em;
         padding-top: 0.3em;
-        font-size: larger;
         a {
             vertical-align: middle;
             text-decoration: none;
