@@ -1,13 +1,25 @@
 $background-color: rgb(200, 232, 240);
 $nav-foot-back-col: rgba(169, 234, 236, 0.842);
-$primary-color: rgb(14, 14, 14);
+$primary-color: rgb(49, 49, 49);
 $hover-link-color: rgb(235, 13, 13);
 $link-color: rgb(23, 2, 247);
 
-@mixin navFootStyle {
+@mixin navAndFootStyle {
     background-color: $nav-foot-back-col;
     display: flex;
     justify-content: space-evenly;
     position: sticky;
-    font-size: larger;
+    z-index: 1;
+    a {
+        font-size: larger;
+        text-decoration-line: none;
+        color: $link-color;
+        &:visited {
+            color: $link-color;
+        }
+        &:hover {
+            color: $hover-link-color;
+            text-decoration-line: underline;
+        }            
+    }
 }

@@ -2,74 +2,68 @@
 
 // mostly made to center everything but navbar and footer
 .container {
+    box-sizing: border-box;
+    background-color: $background-color;
     display: grid;
-    grid-template-columns: 20em repeat(3, 1fr) 20em;
+    justify-content: center;
+    grid-template-columns: 20em repeat(2, 1fr) 20em;
     grid-gap: 1em;
     grid-template-areas: 
-    "nav nav nav nav nav"
-    ". presentation presentation presentation ."
-    ". portfolio portfolio portfolio ."
-    ". contacts contacts contacts ."
-    ". nackademin nackademin nackademin ."
-    "footer footer footer footer footer";
+    'nav nav nav nav'
+    '. profilePic aboutMe .'
+    '. acme yatzy .'
+    '. contactInfo tipsfedora .'
+    '. schoolpic nackademinInfo .'
+    'footer footer footer footer';
     // navbar
     .nav {
-        background-color: $nav-foot-back-col;
         grid-area: nav;
-        display: flex;
-        justify-content: space-evenly;
         padding: 1.2em;
-        position: sticky;
-        z-index: 1;
         top: 0;
-        a {
-            font-size: larger;
-            text-decoration-line: none;
-            color: $link-color;
-            &:visited {
-                color: $link-color;
-            }
-            &:hover {
-                color: $hover-link-color;
-                text-decoration-line: underline;
-            }            
+        @include navAndFootStyle;
+    }
+    .profilePic {
+        grid-area: profilePic;
+        max-width: 360px;
+        margin: 1em;
+    }
+    .aboutMe {
+        grid-area: aboutMe;
+        width: 100%;
+        color: black;
+        h1 {
+            font-size: 2.6em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p {
+            font-family: Courier, Monaco, monospace;
+        }
+        span {
+            color: rgb(92, 2, 2);
         }
     }
-    .presentation {
-        grid-area: presentation;
-        .profilePic {
-            float: left;
-        }
+    .acme {
+        grid-area: acme;
     }
-    .portfolio {
-        grid-area: portfolio;
+    .yatzy {
+        grid-area: yatzy;
     }
-    .contacts {
-        grid-area: contacts;
+    .contactInfo {
+        grid-area: contactInfo;
     }
-    .nackademin {
-        grid-area: nackademin;
+    .tipsfedora {
+        grid-area: tipsfedora;
+    }
+    .schoolpic {
+        grid-area: schoolpic;
+    }
+    .nackademinInfo {
+        grid-area: nackademinInfo;
     }
     .footer {
         grid-area: footer;
-        background-color: $nav-foot-back-col;
-        display: flex;
-        justify-content: space-evenly;
         padding: 0.8em;
-        position: sticky;
-        z-index: 1;
-        bottom: 0;
-        a {
-            font-size: larger;
-            text-decoration-line: none;
-            color: $link-color;
-            &:visited {
-                color: $link-color;
-            }
-            &:hover {
-                color: $hover-link-color;
-                text-decoration-line: underline;
-            }            
-        }
+        bottom: 0;      
+        @include navAndFootStyle;
     }
 }

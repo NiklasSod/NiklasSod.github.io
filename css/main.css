@@ -1,29 +1,35 @@
 .container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #c8e8f0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20em (1fr)[3] 20em;
-      grid-template-columns: 20em repeat(3, 1fr) 20em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 20em (1fr)[2] 20em;
+      grid-template-columns: 20em repeat(2, 1fr) 20em;
   grid-gap: 1em;
-      grid-template-areas: "nav nav nav nav nav" ". presentation presentation presentation ." ". portfolio portfolio portfolio ." ". contacts contacts contacts ." ". nackademin nackademin nackademin ." "footer footer footer footer footer";
+      grid-template-areas: 'nav nav nav nav' '. profilePic aboutMe .' '. acme yatzy .' '. contactInfo tipsfedora .' '. schoolpic nackademinInfo .' 'footer footer footer footer';
 }
 
 .container .nav {
-  background-color: rgba(169, 234, 236, 0.842);
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
+  -ms-grid-column-span: 4;
   grid-area: nav;
+  padding: 1.2em;
+  top: 0;
+  background-color: rgba(169, 234, 236, 0.842);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 1.2em;
   position: -webkit-sticky;
   position: sticky;
   z-index: 1;
-  top: 0;
 }
 
 .container .nav a {
@@ -43,43 +49,78 @@
           text-decoration-line: underline;
 }
 
-.container .presentation {
+.container .profilePic {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-area: presentation;
+  grid-area: profilePic;
+  max-width: 360px;
+  margin: 1em;
 }
 
-.container .presentation .profilePic {
-  float: left;
+.container .aboutMe {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: aboutMe;
+  width: 100%;
+  color: black;
 }
 
-.container .portfolio {
+.container .aboutMe h1 {
+  font-size: 2.6em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .aboutMe p {
+  font-family: Courier, Monaco, monospace;
+}
+
+.container .aboutMe span {
+  color: #5c0202;
+}
+
+.container .acme {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-area: portfolio;
+  grid-area: acme;
 }
 
-.container .contacts {
+.container .yatzy {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: yatzy;
+}
+
+.container .contactInfo {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-area: contacts;
+  grid-area: contactInfo;
 }
 
-.container .nackademin {
+.container .tipsfedora {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: tipsfedora;
+}
+
+.container .schoolpic {
   -ms-grid-row: 5;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-area: nackademin;
+  grid-area: schoolpic;
+}
+
+.container .nackademinInfo {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: nackademinInfo;
 }
 
 .container .footer {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
+  -ms-grid-column-span: 4;
   grid-area: footer;
+  padding: 0.8em;
+  bottom: 0;
   background-color: rgba(169, 234, 236, 0.842);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,11 +128,9 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 0.8em;
   position: -webkit-sticky;
   position: sticky;
   z-index: 1;
-  bottom: 0;
 }
 
 .container .footer a {
