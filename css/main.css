@@ -7,10 +7,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: 14em 1fr 1fr 14em;
-      grid-template-columns: 14em 1fr 1fr 14em;
+  -ms-grid-columns: 20em 1fr 1fr 20em;
+      grid-template-columns: 20em 1fr 1fr 20em;
   grid-gap: 3em 1em;
-      grid-template-areas: 'nav nav nav nav' '. profilePic aboutMe .' '. acme yatzy .' '. contactInfo tipsfedora .' '. schoolpic nackademinInfo .' 'footer footer footer footer';
+      grid-template-areas: 'nav nav nav nav' '. profilePic aboutMe .' '. acme quiz .' '. contactInfo tipsfedora .' '. schoolpic nackademinInfo .' 'footer footer footer footer';
 }
 
 .container .nav {
@@ -92,16 +92,27 @@
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: acme;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  padding-right: 2em;
 }
 
-.container .yatzy {
+.container .quiz {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
-  grid-area: yatzy;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  grid-area: quiz;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  padding-left: 2em;
+}
+
+.container .quiz h1 {
+  font-style: italic;
+  color: #1702f7;
+  padding-bottom: 4em;
 }
 
 .container .contactInfo {
@@ -118,6 +129,7 @@
 
 .container .contactInfo p {
   text-align: end;
+  font-size: large;
   margin-right: 2.6em;
 }
 
@@ -201,7 +213,7 @@
     -ms-grid-columns: 10em 1fr 10em;
         grid-template-columns: 10em 1fr 10em;
     grid-gap: 1em;
-        grid-template-areas: "nav nav nav" ". profilePic ." ". aboutMe ." ". acme ." ". yatzy ." ". contactInfo ." ". tipsfedora ." ". schoolpic ." ". nackademinInfo ." "footer footer footer";
+        grid-template-areas: "nav nav nav" ". profilePic ." ". aboutMe ." ". acme ." ". quiz ." ". contactInfo ." ". tipsfedora ." ". schoolpic ." ". nackademinInfo ." "footer footer footer";
   }
   .nav {
     -ms-grid-row: 1;
@@ -273,8 +285,6 @@
     grid-area: acme;
   }
   .yatzy {
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
     grid-area: yatzy;
   }
   .contactInfo {
@@ -296,6 +306,8 @@
     -ms-grid-row: 9;
     -ms-grid-column: 2;
     grid-area: nackademinInfo;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .footer {
     -ms-grid-row: 10;
