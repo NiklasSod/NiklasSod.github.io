@@ -1,3 +1,5 @@
+@import "settings";
+
 // mostly made to center everything but navbar and footer
 .container {
     display: grid;
@@ -12,12 +14,32 @@
     "footer footer footer footer footer";
     // navbar
     .nav {
+        background-color: $nav-foot-back-col;
         grid-area: nav;
         display: flex;
         justify-content: space-evenly;
+        padding: 1.2em;
+        position: sticky;
+        z-index: 1;
+        top: 0;
+        a {
+            font-size: larger;
+            text-decoration-line: none;
+            color: $link-color;
+            &:visited {
+                color: $link-color;
+            }
+            &:hover {
+                color: $hover-link-color;
+                text-decoration-line: underline;
+            }            
+        }
     }
     .presentation {
         grid-area: presentation;
+        .profilePic {
+            float: left;
+        }
     }
     .portfolio {
         grid-area: portfolio;
@@ -30,5 +52,24 @@
     }
     .footer {
         grid-area: footer;
+        background-color: $nav-foot-back-col;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0.8em;
+        position: sticky;
+        z-index: 1;
+        bottom: 0;
+        a {
+            font-size: larger;
+            text-decoration-line: none;
+            color: $link-color;
+            &:visited {
+                color: $link-color;
+            }
+            &:hover {
+                color: $hover-link-color;
+                text-decoration-line: underline;
+            }            
+        }
     }
 }
