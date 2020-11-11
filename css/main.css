@@ -1,1 +1,57 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20em (1fr)[3] 20em;
+      grid-template-columns: 20em repeat(3, 1fr) 20em;
+  grid-gap: 1em;
+      grid-template-areas: "nav nav nav nav nav" ". presentation presentation presentation ." ". portfolio portfolio portfolio ." ". contacts contacts contacts ." ". nackademin nackademin nackademin ." "footer footer footer footer footer";
+}
+
+.container .nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: nav;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .presentation {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: presentation;
+}
+
+.container .portfolio {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: portfolio;
+}
+
+.container .contacts {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: contacts;
+}
+
+.container .nackademin {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: nackademin;
+}
+
+.container .footer {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: footer;
+}
+/*# sourceMappingURL=main.css.map */

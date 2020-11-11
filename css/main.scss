@@ -1,0 +1,34 @@
+// mostly made to center everything but navbar and footer
+.container {
+    display: grid;
+    grid-template-columns: 20em repeat(3, 1fr) 20em;
+    grid-gap: 1em;
+    grid-template-areas: 
+    "nav nav nav nav nav"
+    ". presentation presentation presentation ."
+    ". portfolio portfolio portfolio ."
+    ". contacts contacts contacts ."
+    ". nackademin nackademin nackademin ."
+    "footer footer footer footer footer";
+    // navbar
+    .nav {
+        grid-area: nav;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .presentation {
+        grid-area: presentation;
+    }
+    .portfolio {
+        grid-area: portfolio;
+    }
+    .contacts {
+        grid-area: contacts;
+    }
+    .nackademin {
+        grid-area: nackademin;
+    }
+    .footer {
+        grid-area: footer;
+    }
+}
