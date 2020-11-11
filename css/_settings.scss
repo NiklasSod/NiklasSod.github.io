@@ -3,6 +3,7 @@ $nav-foot-back-col: rgba(169, 234, 236, 0.842);
 $primary-color: rgb(49, 49, 49);
 $hover-link-color: rgb(235, 13, 13);
 $link-color: rgb(23, 2, 247);
+$max-width-pics: 340px;
 
 @mixin navAndFootStyle {
     background-color: $nav-foot-back-col;

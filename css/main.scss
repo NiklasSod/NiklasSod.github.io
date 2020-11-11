@@ -23,8 +23,10 @@
         @include navAndFootStyle;
     }
     .profilePic {
+        
         grid-area: profilePic;
-        max-width: 340px;
+        justify-self: end;
+        max-width: $max-width-pics;
         margin: 1em 0;
     }
     .aboutMe {
@@ -43,20 +45,32 @@
     }
     .acme {
         grid-area: acme;
+        justify-self: center;
     }
     .yatzy {
         grid-area: yatzy;
+        justify-self: center;
     }
     .contactInfo {
         grid-area: contactInfo;
+        h1 {
+            text-align: center;
+            font-style: italic;
+            padding-bottom: 1em;
+        }
+        p {
+            text-align: end;
+            margin-right: 2.6em;
+        }
     }
     .tipsfedora {
         grid-area: tipsfedora;
-        max-width: 340px;
+        max-width: $max-width-pics;
     }
     .schoolpic {
         grid-area: schoolpic;
-        max-width: 340px;
+        justify-self: end;
+        max-width: $max-width-pics;
     }
     .nackademinInfo {
         grid-area: nackademinInfo;
