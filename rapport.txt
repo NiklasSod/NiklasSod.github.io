@@ -12,7 +12,7 @@ Jag har title på mouseover samt alt(ernativ) text om bilden inte laddar.
 1.4.10AA - Skapa en layout som fungerar på en 320 pixlar bred skärm.
 
 -- För och nackdelar --
-För och nackdelar samt beskrivning av svårigheter.
+För och nackdelar samt beskrivning av svårigheter. 
 Jag vill börja med att förklara den stora nackdelen, det är väldigt 
 ensamt i denna corona-värld just nu. 
 Jag menar inte att jag lever ett ensamt liv men som studerande för att 
