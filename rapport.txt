@@ -1,5 +1,13 @@
-För och nackdelar / scrum / grafisk profil / tillgänglighet
+Mina tillgänglighetskrav / För och nackdelar / scrum / grafisk profil / tillgänglighet
 
+
+-- Mina tillgänglighetskrav --
+2.3.1A - Orsaka inte epileptiska anfall genom blinkande.
+(oklar om denna väldigt simpla ovan duger, men jag lägger till den)
+
+1.3.4AA - Se till att allt innehåll presenteras rätt oavsett skärmens riktning.
+
+1.4.10AA - Skapa en layout som fungerar på en 320 pixlar bred skärm.
 
 -- För och nackdelar --
 För och nackdelar samt beskrivning av svårigheter.
