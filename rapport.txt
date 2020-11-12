@@ -1,3 +1,30 @@
+För och nackdelar / scrum / grafisk profil / tillgänglighet
+
+
+-- För och nackdelar --
+För och nackdelar samt beskrivning av svårigheter.
+Jag vill börja med att förklara den stora nackdelen, det är väldigt 
+ensamt i denna corona-värld just nu. 
+Jag menar inte att jag lever ett ensamt liv men som studerande för att 
+bli programmerare har jag ingenstans att vända mig (i princip). 
+
+Då kommer vi till en ändå ganska stark fördel... jag har blivit 
+ganska duktig på att googla och lösa problem. Ibland ligger man i sängen 
+och är nära att somna in men kommer på något som skrivs ned och underlättar 
+morgondagen. 
+
+Jag startade detta projekt med två tankar i bakhuvudet, jag ville försöka 
+klara av allting utan någon js-fil och utan någon bootstrap. För att 
+utmana mig att ändå lyckas göra en nav och övrig styling för egen hand.
+
+Det absolut svåraste för mig har varit grid. Det har kostat två hela dagar 
+att känna sig trygg i, grid-template-areas ville sig aldrig. 
+
+Detta projekt har varit guld värt. Jag har lärt mig mer denna vecka än 
+på valfri månad. Detta beror dock på att jag äntligen kommit in i 
+en bra studieteknik. Det tog sin tid!
+
+
 -- Scrum --
 Scrum är ett arbetssätt som delar upp projekt i ettapper kallade sprintar. 
 Beställaren - produktägaren - förklarar projektet och delger en backlog 
@@ -17,6 +44,7 @@ I slutet av varje sprint redovisas vad som gjorts för produktägaren samt görs
 "sprint retrospective" där teamet inspekterar sitt jobb för att finna till exempel 
 förbättringar inför nästa sprint.
 
+
 -- Grafisk Profil --
 En grafisk profil är en mall på hur ett projekt ska se ut. 
 Vilken logo som ska användas, färger, typsnitt, mönster etc.
@@ -24,6 +52,7 @@ Vilken logo som ska användas, färger, typsnitt, mönster etc.
 Utan en grafisk profil skulle programmeraren få "fria händer", tänk om flera 
 programmerare jobbar på samma projekt men olika sidor. Ingenting skulle följa en mall.
 Kaos! :)
+
 
 -- Tillgänglighet --
 Viktiga hemsidor ska kunna nås av exakt så många som det är möjligt i samhället. 
