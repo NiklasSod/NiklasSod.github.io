@@ -32,7 +32,8 @@ $max-width-mobil-pics: 200px;
         padding-right: 0.4em;
     }
     @include linkstyle;
-    // i wanted everything in linkstyle but had to add some stuff to navbar and footer
+    // i wanted everything in mixin linkstyle 
+    // but had to add some stuff to navbar and footer
     a {
         display: flex;
         align-items: center;

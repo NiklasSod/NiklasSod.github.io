@@ -173,7 +173,7 @@ html {
 }
 
 // i only needed to remove the text in navbar to get the website 
-// looking good down to 370px
+// looking good down to 370px and smaller grid columns left/right
 @media screen and (max-width: 620px) {
     .container {
         display: grid;
