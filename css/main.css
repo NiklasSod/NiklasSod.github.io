@@ -40,13 +40,6 @@ html {
 }
 
 .container .nav a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: larger;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   color: #1702f7;
@@ -60,6 +53,16 @@ html {
   color: #eb0d0d;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+.container .nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: larger;
 }
 
 .container .profilePic {
@@ -219,13 +222,6 @@ html {
 }
 
 .container .footer a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: larger;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   color: #1702f7;
@@ -239,6 +235,16 @@ html {
   color: #eb0d0d;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+.container .footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: larger;
 }
 
 @media only screen and (max-width: 1040px) {
@@ -268,13 +274,6 @@ html {
     padding-right: 0.4em;
   }
   .container .nav a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: larger;
     -webkit-text-decoration-line: none;
             text-decoration-line: none;
     color: #1702f7;
@@ -286,6 +285,15 @@ html {
     color: #eb0d0d;
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
+  }
+  .container .nav a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: larger;
   }
   .container .profilePic {
     -ms-grid-row: 3;
@@ -368,13 +376,6 @@ html {
     padding-right: 0.4em;
   }
   .container .footer a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: larger;
     -webkit-text-decoration-line: none;
             text-decoration-line: none;
     color: #1702f7;
@@ -386,6 +387,15 @@ html {
     color: #eb0d0d;
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
+  }
+  .container .footer a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: larger;
   }
 }
 

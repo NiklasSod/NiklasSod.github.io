@@ -3,6 +3,7 @@ $nav-foot-back-col: rgba(169, 234, 236, 0.842);
 $primary-color: rgb(49, 49, 49);
 $hover-link-color: rgb(235, 13, 13);
 $link-color: rgb(23, 2, 247);
+
 $max-width-pics: 340px;
 $max-width-mobil-pics: 200px;
 
@@ -11,6 +12,7 @@ $max-width-mobil-pics: 200px;
     a {
         text-decoration-line: none;
         color: $link-color;
+        // the site is not big so moving around wont be a problem, no need for change of color 
         &:visited {
             color: $link-color;
         }
@@ -29,19 +31,11 @@ $max-width-mobil-pics: 200px;
     img {
         padding-right: 0.4em;
     }
+    @include linkstyle;
+    // i wanted everything in linkstyle but had to add some stuff to navbar and footer
     a {
         display: flex;
         align-items: center;
-        font-size: larger;
-        text-decoration-line: none;
-        color: $link-color;
-        // the site is not big so moving around wont be a problem, no need for change of color
-        &:visited {
-            color: $link-color;
-        }
-        &:hover {
-            color: $hover-link-color;
-            text-decoration-line: underline;
-        }            
+        font-size: larger;          
     }
 }
