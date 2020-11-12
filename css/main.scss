@@ -56,6 +56,12 @@ html {
         grid-area: acme;
         justify-self: end;
         padding-right: 2em;
+        .swing {
+            &:hover {
+                transform-origin: 50% 0;
+                animation: swinging 2s ease-in-out forwards infinite;
+            }         
+        }
     }
     .quiz {
         grid-area: quiz;
