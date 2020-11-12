@@ -399,9 +399,158 @@ html {
   }
 }
 
-@media screen and (max-width: 680px) {
-  * {
-    color: gold;
+@media screen and (max-width: 620px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2em 1fr 2em;
+        grid-template-columns: 2em 1fr 2em;
+        grid-template-areas: "nav nav nav" ". aboutMe ." ". profilePic ." ". acme ." ". quiz ." ". contactInfo ." ". tipsfedora ." ". schoolpic ." ". nackademinInfo ." "footer footer footer";
+  }
+  .container .nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: nav;
+    background-color: rgba(169, 234, 236, 0.842);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .container .nav img {
+    padding-right: 0.4em;
+  }
+  .container .nav a {
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    color: #1702f7;
+  }
+  .container .nav a:visited {
+    color: #1702f7;
+  }
+  .container .nav a:hover {
+    color: #eb0d0d;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+  .container .nav a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: larger;
+  }
+  .container .nav span {
+    display: none;
+  }
+  .container .profilePic {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: profilePic;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .container .aboutMe {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: aboutMe;
+    margin-left: 1.4em;
+  }
+  .container .acme {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: acme;
+  }
+  .container .quiz {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: quiz;
+    padding: 0;
+  }
+  .container .quiz h1 {
+    padding: 0;
+  }
+  .container .contactInfo {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    grid-area: contactInfo;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .container .contactInfo p {
+    text-align: start;
+  }
+  .container .tipsfedora {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+    grid-area: tipsfedora;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0;
+  }
+  .container .schoolpic {
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+    grid-area: schoolpic;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0;
+  }
+  .container .nackademinInfo {
+    -ms-grid-row: 9;
+    -ms-grid-column: 2;
+    grid-area: nackademinInfo;
+  }
+  .container .footer {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footer;
+    background-color: rgba(169, 234, 236, 0.842);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .container .footer img {
+    padding-right: 0.4em;
+  }
+  .container .footer a {
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    color: #1702f7;
+  }
+  .container .footer a:visited {
+    color: #1702f7;
+  }
+  .container .footer a:hover {
+    color: #eb0d0d;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+  .container .footer a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: larger;
   }
 }
 /*# sourceMappingURL=main.css.map */

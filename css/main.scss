@@ -172,11 +172,73 @@ html {
     }
 }
 
-// now everything needs to get smaller, removing text in navbar 
-// only keeping icons and changing max width on pictures
-@media screen and (max-width: 680px) {
-    * {
-        color: gold;
-        // $max-width-mobil-pics: 200px;
-    }
+// i only needed to remove the text in navbar to get the website 
+// looking good down to 370px
+@media screen and (max-width: 620px) {
+    .container {
+        display: grid;
+        grid-template-columns: 2em 1fr 2em;
+        grid-template-areas:
+          "nav nav nav"
+          ". aboutMe ."
+          ". profilePic ."
+          ". acme ."
+          ". quiz ."
+          ". contactInfo ."
+          ". tipsfedora ."
+          ". schoolpic ."
+          ". nackademinInfo ."
+          "footer footer footer";
+          .nav {
+          grid-area: nav;
+          @include navAndFootStyle;
+          span {
+            display: none;
+          }
+          }
+          .profilePic {
+          grid-area: profilePic;
+          justify-self: center;
+          }
+          .aboutMe {
+          grid-area: aboutMe;
+          margin-left: 1.4em;
+          }
+          .acme {
+          justify-self: center;
+          grid-area: acme;
+          }
+          .quiz {
+          justify-self: center;
+          grid-area: quiz;
+          padding: 0;
+          h1 {
+              padding: 0;
+              }
+          }
+          .contactInfo {
+          grid-area: contactInfo;
+          justify-self: center;
+          p {
+              text-align: start;
+          }
+          }
+          .tipsfedora {
+          grid-area: tipsfedora;
+          justify-self: center;
+          margin: 0;
+          }
+          .schoolpic {
+          grid-area: schoolpic;
+          justify-self: center;
+          margin: 0;
+          }
+          .nackademinInfo {
+          grid-area: nackademinInfo;
+          }
+          .footer {
+          grid-area: footer;
+          @include navAndFootStyle;
+          }
+      }
 }
