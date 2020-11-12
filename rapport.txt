@@ -5,6 +5,9 @@ Mina tillgänglighetskrav / För och nackdelar / scrum / grafisk profil / tillg�
 2.3.1A - Orsaka inte epileptiska anfall genom blinkande.
 (oklar om denna väldigt simpla ovan duger, men jag lägger till den)
 
+1.1.1A - Beskriv med text alla bilder. (?)
+Jag har title på mouseover samt alt(ernativ) text om bilden inte laddar.
+
 1.3.4AA - Se till att allt innehåll presenteras rätt oavsett skärmens riktning.
 
 1.4.10AA - Skapa en layout som fungerar på en 320 pixlar bred skärm.
@@ -27,6 +30,9 @@ utmana mig att ändå lyckas göra en nav och övrig styling för egen hand.
 
 Det absolut svåraste för mig har varit grid. Det har kostat två hela dagar 
 att känna sig trygg i, grid-template-areas ville sig aldrig. 
+Något jag till nästa gång ska titta närmare på är ännu flera variationer av 
+mixins till media querys och media querys rent allmänt. Känns som det finns 
+många rader kod att korta ned på så vis. 
 
 Detta projekt har varit guld värt. Jag har lärt mig mer denna vecka än 
 på valfri månad. Detta beror dock på att jag äntligen kommit in i 
