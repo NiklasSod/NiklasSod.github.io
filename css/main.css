@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  background-color: #c8e8f0;
 }
 
 .container {
@@ -403,8 +404,8 @@ html {
   .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2em 1fr 2em;
-        grid-template-columns: 2em 1fr 2em;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: "nav nav nav" ". aboutMe ." ". profilePic ." ". acme ." ". quiz ." ". contactInfo ." ". tipsfedora ." ". schoolpic ." ". nackademinInfo ." "footer footer footer";
   }
   .container .nav {
@@ -456,6 +457,7 @@ html {
     grid-area: profilePic;
     -ms-grid-column-align: center;
         justify-self: center;
+    max-width: 200px;
   }
   .container .aboutMe {
     -ms-grid-row: 2;
@@ -469,6 +471,9 @@ html {
     -ms-grid-row: 4;
     -ms-grid-column: 2;
     grid-area: acme;
+  }
+  .container .acme h3 {
+    margin-left: 1em;
   }
   .container .quiz {
     -ms-grid-column-align: center;
@@ -498,6 +503,7 @@ html {
     -ms-grid-column-align: center;
         justify-self: center;
     margin: 0;
+    max-width: 200px;
   }
   .container .schoolpic {
     -ms-grid-row: 8;
@@ -506,11 +512,15 @@ html {
     -ms-grid-column-align: center;
         justify-self: center;
     margin: 0;
+    max-width: 200px;
   }
   .container .nackademinInfo {
     -ms-grid-row: 9;
     -ms-grid-column: 2;
     grid-area: nackademinInfo;
+  }
+  .container .nackademinInfo h1, .container .nackademinInfo p {
+    margin-left: 1em;
   }
   .container .footer {
     -ms-grid-row: 10;

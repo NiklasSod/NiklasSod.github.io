@@ -4,7 +4,9 @@
 @import "settings";
 
 html {
+    // used for navbar to not instantaneously jump to location
     scroll-behavior: smooth;
+    background-color: $background-color;
   }
 
 // mostly made to center everything a bit in two columns 
@@ -174,10 +176,11 @@ html {
 
 // i only needed to remove the text in navbar to get the website 
 // looking good down to 370px and smaller grid columns left/right
+// but did some more to get to the requirements of working on screens @320px
 @media screen and (max-width: 620px) {
     .container {
         display: grid;
-        grid-template-columns: 2em 1fr 2em;
+        grid-template-columns: 1fr;
         grid-template-areas:
           "nav nav nav"
           ". aboutMe ."
@@ -199,6 +202,7 @@ html {
           .profilePic {
           grid-area: profilePic;
           justify-self: center;
+          max-width: $max-width-mobil-pics;
           }
           .aboutMe {
           grid-area: aboutMe;
@@ -207,6 +211,9 @@ html {
           .acme {
           justify-self: center;
           grid-area: acme;
+          h3 {
+              margin-left: 1em;
+          }
           }
           .quiz {
           justify-self: center;
@@ -227,14 +234,19 @@ html {
           grid-area: tipsfedora;
           justify-self: center;
           margin: 0;
+          max-width: $max-width-mobil-pics;
           }
           .schoolpic {
           grid-area: schoolpic;
           justify-self: center;
           margin: 0;
+          max-width: $max-width-mobil-pics;
           }
           .nackademinInfo {
           grid-area: nackademinInfo;
+          h1, p {
+              margin-left: 1em;
+          }
           }
           .footer {
           grid-area: footer;
