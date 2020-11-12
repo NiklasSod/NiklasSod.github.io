@@ -42,8 +42,13 @@ $max-width-mobil-pics: 200px;
 
 // wanted to try an animation, i put it on ACME picture
 @keyframes swinging {
-    0%{transform: rotate(0deg);}
-    25%{transform: rotate(10deg);}
-    75%{transform: rotate(-10deg);}
-    100%{transform: rotate(0deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
 }

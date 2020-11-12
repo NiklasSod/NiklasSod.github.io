@@ -3,7 +3,6 @@ Mina tillgänglighetskrav / För och nackdelar / scrum / grafisk profil / tillg�
 
 -- Mina tillgänglighetskrav --
 2.3.1A - Orsaka inte epileptiska anfall genom blinkande.
-(oklar om denna väldigt simpla ovan duger, men jag lägger till den)
 
 1.1.1A - Beskriv med text alla bilder. (?)
 Jag har title på mouseover samt alt(ernativ) text om bilden inte laddar.

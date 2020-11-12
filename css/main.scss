@@ -58,8 +58,8 @@ html {
         padding-right: 2em;
         .swing {
             &:hover {
-                transform-origin: 50% 0;
-                animation: swinging 2s ease-in-out forwards infinite;
+                transform-origin: 50% 0.5;
+                animation: swinging 2.6s linear infinite;
             }         
         }
     }
