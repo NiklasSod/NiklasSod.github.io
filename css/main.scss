@@ -1,5 +1,5 @@
 // importing some set colours to make the website keep to 
-// the style i want also importing a mixin because navbar 
+// the style i want also importing a mixin because navbar,
 // footer and links has alot in common
 @import "settings";
 
@@ -201,9 +201,9 @@ html {
           .nav {
           grid-area: nav;
           @include navAndFootStyle;
-          span {
-            display: none;
-          }
+            span {
+                display: none;
+            }
           }
           .profilePic {
           grid-area: profilePic;
