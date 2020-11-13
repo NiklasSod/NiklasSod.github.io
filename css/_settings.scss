@@ -26,7 +26,7 @@ $max-width-mobil-pics: 200px;
     background-color: $nav-foot-back-col;
     display: flex;
     justify-content: space-evenly;
-    //position: sticky;
+    position: sticky;
     img {
         padding-right: 0.4em;
     }
