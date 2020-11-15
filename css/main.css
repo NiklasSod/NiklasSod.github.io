@@ -141,6 +141,7 @@ html {
 }
 
 .container .acme h1 {
+  margin-left: 1.2em;
   font-family: Georgia, serif;
 }
 
