@@ -11,6 +11,16 @@ Jag har title på mouseover samt alt(ernativ) text om bilden inte laddar.
 
 1.4.10AA - Skapa en layout som fungerar på en 320 pixlar bred skärm.
 
+2.4.3 A - Gör en logisk tab-ordning.
+Jag testade mig fram lite, tänkte ta bort länkar med tabindex -1 men insåg sedan att 
+dom är bra att ha kvar. Sidan är så liten och tabordningen fungerar bra som den är. 
+Den startar med att tabba i navbar och väljer man att gå vidare därifrån så fortsätter 
+taborder i rätt sektion. 
+
+2.4.4 - skriv tydliga länkar.
+Alla länkar följer samma mönster, en blå text som blir röd vid markering och muspekaren 
+visar att den är klickbar, bilden är animerad och har en alt-text samt allt annat också. 
+
 -- För och nackdelar --
 För och nackdelar samt beskrivning av svårigheter. 
 Jag vill börja med att förklara den stora nackdelen, det är väldigt 

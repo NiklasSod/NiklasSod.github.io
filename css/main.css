@@ -28,9 +28,14 @@
   }
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
   background-color: #c8e8f0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -133,6 +138,10 @@ html {
   -ms-grid-column-align: end;
       justify-self: end;
   padding-right: 2em;
+}
+
+.container .acme h1 {
+  font-family: Georgia, serif;
 }
 
 .container .acme .swing:hover {

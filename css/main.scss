@@ -3,10 +3,16 @@
 // footer and links has alot in common
 @import "settings";
 
+// Hide scrollbar for Chrome, Safari and Opera.
+::-webkit-scrollbar {
+    display: none;
+}
+
 html {
     // used for navbar to not instantaneously jump to location
     scroll-behavior: smooth;
     background-color: $background-color;
+    overflow-x: hidden;
   }
 
 // mostly made to center everything a bit in two columns 
@@ -56,6 +62,9 @@ html {
         grid-area: acme;
         justify-self: end;
         padding-right: 2em;
+        h1 {
+            font-family: Georgia, serif;
+        }
         .swing {
             &:hover {
                 transform-origin: 50% 0.5;
