@@ -1,124 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Niklas Portfolio</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
-  </head>
-  <body>
-
-  <div id="startAboutMe" class="container">
-    <!--four sections in the navbar to go to correct section id in code-->
-    <nav class="nav">
-      <a href="#startAboutMe"><img
-        src="./icons/home.PNG"
-        alt="link to about me" 
-        width="40"
-        height="40"
-      /><span title="Go to about me">Home</span></a>
-      <!--i put span around the text so i can remove it -->
-      <!--and only show icons on very small mobile screens-->
-      <a href="#portfolio"><img
-        src="./icons/portfolio.PNG"
-        alt="link to my portfolio" 
-        width="40"
-        height="40"
-      /><span title="Go to my portfolio">Portfolio</span></a>
-      <a href="#contactInfo"><img
-        src="./icons/contacts.PNG"
-        alt="link to my contact information" 
-        width="40"
-        height="40"
-      /><span title="Go to my contact information">Contacts</span></a>
-      <a href="#nackademinInfo"><img
-        src="./icons/school.PNG"
-        alt="link to information about my school" 
-        width="40"
-        height="40"
-      /><span title="Go to information about my school">Nackademin</span></a>
-    </nav>
-
-    <img class="profilePic" src="./pics/meprofile.PNG" title="A picture of my happy face" alt="A picture of my happy face">
-    <div class="aboutMe">
-      <h1>Hello! <br>My name is Niklas <span class="lastName">Söderberg</span></h1>
-      <p>I am studying to become a full stack web developer at Nackademin in Stockholm.</p>
-      <p>This seems to be a perfect job for self-development and i look forward to become better every day.</p>
-      <p>My interests have started to change and are starting to lean more and more towards programming.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="flex">
+      <h1 class="header">Black<span class="bgc-red">Jack</span></h1>
+      <button class="btn start-btn" id="startBtn">Start game</button>
+      <button class="btn restart-btn" id="restartBtn">Restart</button>
     </div>
-
-    <div id="portfolio" class="acme">
-      <h1>Portfolio</h1>
-      <div class="swing">
-        <a
-          style="font-style: italic"
-          href="https://niklassod.github.io/ACME-Events/" 
-          title="Link to the ACME project"
-          ><img
-            src="./pics/acme_logo.png"
-            alt="logo for acme project"
-            width="300"
-            height="300"
-          /></a
-        >
-      </div>
-      <h3>A project to create and show events</h5>
+    <div class="rules" id="rules">
+      <p>A friendly BlackJack game</p>
+      <p>Dealer must draw on 16 and stand on 17</p>
+      <p>You WIN on draw, even if dealer has 21 at start</p>
+      <p>You start with 100 currency and win / lose 10</p>
     </div>
-    <!--uppdatera quiz när färdig...-->
-    <div class="quiz">
-      <h1>Quiz</h1>
-      <h3>An online quiz made by fetching API</h3>
-      <p>In progness...</p>
+    <div class="dealer" id="dealerHand"></div>
+    <div class="score">
+      <div class="endGameInfo" id="dealerInfo"></div>
+      <div class="gameInfo hide" id="gameInfo"></div>
+      <div class="endGameInfo" id="playerInfo"></div>
     </div>
-    <!--Vår yatzy såg för oseriös ut...-->
-    <div class="yatzy"></div>
-
-
-    <div id="contactInfo" class="contactInfo">
-      <h1>Contact information</h1>
-      <p>Niklas Söderberg</p>
-      <p>0704-15 76 15</p>
-      <!--just easier ways to contact and find me via clickable text-->
-      <p><a title="Click to write me!" href="mailto:niklas.soderberg@outlook.com">niklas.soderberg@outlook.com</a></p>
-      <p><a title="Link to google maps" href="https://www.google.se/maps/place/S%C3%A5gverksgatan+98,+122+41+Enskede/">Sågverksgatan 98, Enskede</a></p>
-    </div>
-    <img class="tipsfedora" src="./pics/meNods.PNG" alt="A silly picture of myself" title="A silly picture of myself">
-    
-    <img class="schoolpic" src="./pics/nackademin.PNG" title="A picture of the main entry to Nackademin, school in Stockholm" 
-    alt="A picture of the main entry to Nackademin, school in Stockholm">
-    <div id="nackademinInfo" class="nackademinInfo">
-      <h1>My <a title="Link to nackademin" href="https://nackademin.se/">education</a></h1>
-      <p>Web developer full stack open source gives you a broad programming competence in both backend and frontend. 
-        You will be able to develop modern applications using HTML, CSS and various JavaScript libraries. 
-        In addition to this, you will also learn to collaborate in agile projects, from coding to implementation. 
-        You will be used to working in a solution-oriented way, both independently and in a development team.</p>
-    </div>
-
-    <footer class="footer">
-      <a
-        style="font-style: italic"
-        href="https://linkedin.com/in/niklas-söderberg-50aa124a" 
-        title="Link to my linkedin"
-        ><img
-          src="./icons/linkedin.svg"
-          alt="linkedin icon"
-          width="40"
-          height="40"
-        />LinkedIn</a
-      >
-      <a style="font-style: italic" href="https://github.com/NiklasSod" 
-      title="Link to my github"
-        ><img
-          src="./icons/github.svg"
-          alt="github icon"
-          width="40"
-          height="40"
-        />Github</a
-      >
-    </footer>
-
+    <div class="player" id="playerHand"></div>
+    <button class="btn stop-btn hide" id="stopBtn">Stop draw</button>
+    <!-- <div class="draw__card__pile"></div> -->
+    <!-- <div class="throw__card__pile"></div> -->
+    <div class="currency" id="currencyDiv"></div> 
   </div>
   
+  <script type="module" src="./script.js"></script>
 </body>
+</html>

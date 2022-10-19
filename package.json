@@ -2,7 +2,7 @@
   "name": "niklassod.github.io",
   "version": "1.0.0",
   "description": "Responsive portfolio",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
